@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.img-grayscale {
+    filter: grayscale(100%) !important;
+    transition: filter 0.3s ease !important;
+  }
+  .img-grayscale:hover {
+    filter: grayscale(0%) !important;
+  }

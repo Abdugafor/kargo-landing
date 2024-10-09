@@ -1,159 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Лендинг Авиа и Логистики</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-<body class="bg-white text-gray-900">
-
-  <!-- Главный экран -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лендинг Авиа и Логистики</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- Главный экран -->
     <div class="h-screen w-full">
+      <video
+        autoplay
+        muted
+        loop
+        class="absolute inset-0 w-full h-full object-cover"
+        style="pointer-events: none"
+        id="video"
+      >
+        <source src="./assets/video-bg.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="absolute inset-0 bg-black bg-opacity-30 z-10"></div>
+
+      <header
+        id="section-home"
+        class="relative z-50 text-white flex items-center justify-between p-10"
+      >
+        <div>
+         <img src="https://alibcargo.com/wp-content/uploads/2023/01/Al-Ibtikar-Logistics-Logo-PNG-300x163.png" alt="" class="w-32">
+        </div>
+
+        <div class="">
+          <ul class="flex items-center gap-10">
+            <li><a href="#section-home">Главная</a></li>
+            <li><a href="#section-about">О компании</a></li>
+            <li><a href="#section-services">Услуги</a></li>
+            <li><a href="#section-contacts">Контакты</a></li>
+            <li><a href="https://alibcargo.com/calculator">Калькулятор</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="hover:text-yellow-200 transition-all cursor-pointer">
+            +7 (495) 123-45-67
+          </p>
+        </div>
+      </header>
+
+      <div
+        class="flex items-center h-full md:w-2/3 relative z-40 text-4xl md:text-7xl p-10 -my-24"
+      >
+        <h1 class="text-white font-thin leading-snug">
+          <span class="text-yellow-300">Экспресс</span> - доставка грузов и
+          отправлений по всему миру
+        </h1>
+      </div>
+    </div>
+
+  
+
+    <!-- Услуги -->
+    <section class="bg-gray-100 py-20 px-5" id="section-services">
+      <div class="container mx-auto">
+        <h2 class="text-xl md:text-3xl font-thin text-left md:w-1/2">
+          Услуги в сфере авиаперевозок грузов, экспресс-доставки корреспонденции
+          и ответственного хранения
+        </h2>
+
+        <div class="flex flex-col lg:flex-row gap-10 mt-10">
+          <!-- First div with content -->
+          <div class="h-fit flex flex-col gap-5 w-full lg:w-1/3">
+            <!-- Add w-1/3 to limit the width -->
+            <div
+              class="service-card h-fit flex items-center font-thin gap-5 py-3 md:py-7 pr-16 border-b border-gray-300 cursor-pointer"
+              data-title="Авиаперевозки"
+              data-text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi eos explicabo eius fuga sit omnis repellat odio, non exercitationem."
+              data-image="https://static.toiimg.com/thumb/msid-111512815,width-1280,height-720,imgsize-78030,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+            >
+              <i class="fa-solid fa-plane text-3xl"></i>
+              <h1 class="text-xl">Авиаперевозки</h1>
+            </div>
+            
+            <div
+              class="service-card h-fit flex items-center font-thin gap-5 py-3 md:py-7 pr-16 border-b border-gray-300 cursor-pointer"
+              data-title="Закупка и ремонт АТИ для авиакомпаний"
+              data-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptate sequi minima officiis, illo rerum quas. Nihil perferendis numquam in ipsum? Debitis dignissimos possimus praesentium quia facilis recusandae mollitia asperiores blanditiis iure quidem! Expedita, impedit, facilis reiciendis quasi repudiandae laboriosam tenetur dignissimos dolores reprehenderit porro provident beatae omnis? Non, repudiandae."
+              data-image="https://sakh-exp.com/upload/iblock/718/718e22d7c20a568d3319fddaf8c832d9.jpg"
+            >
+              <i class="fa-solid fa-tools text-3xl"></i>
+              <h1 class="text-xl">Закупка и ремонт АТИ для авиакомпаний</h1>
+            </div>
+
+            <div
+              class="service-card h-fit flex items-center font-thin gap-5 py-3 md:py-7 pr-16 border-b border-gray-300 cursor-pointer"
+              data-title="Закупка и ремонт АТИ для авиакомпаний"
+              data-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptate sequi minima officiis, illo rerum quas. Nihil perferendis numquam in ipsum? Debitis dignissimos possimus praesentium quia facilis recusandae mollitia asperiores blanditiis iure quidem! Expedita, impedit, facilis reiciendis quasi repudiandae laboriosam tenetur dignissimos dolores reprehenderit porro provident beatae omnis? Non, repudiandae."
+              data-image="https://theins.ru/images/QSD5HiCzWvrmXFMdaaWbx-VABbiWPbh2mRLazrS8ouE/rs:auto:360:270:0:0/dpr:2/q:80/bG9jYWw6L3B1Ymxp/Yy9zdG9yYWdlL3Bv/c3QvMjU4NTY5L2Zp/bGUtNWJiNWE5M2Rk/MTk1MjIyNDI3ZmNl/N2Q3NTk2ZGEyMjgu/cG5n.jpg"
+            >
+              <i class="fa-solid fa-tools text-3xl"></i>
+              <h1 class="text-xl">Закупка и ремонт АТИ для авиакомпаний</h1>
+            </div>
+
+            <div
+              class="service-card h-fit flex items-center font-thin gap-5 py-3 md:py-7 pr-16 border-b border-gray-300 cursor-pointer"
+              data-title="Автодоставка"
+              data-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptate sequi minima officiis, illo rerum quas. Nihil perferendis numquam in ipsum? Debitis dignissimos possimus praesentium quia facilis recusandae mollitia asperiores blanditiis iure quidem! Expedita, impedit, facilis reiciendis quasi repudiandae laboriosam tenetur dignissimos dolores reprehenderit porro provident beatae omnis? Non, repudiandae."
+              data-image="https://roltec.ru/upload/16863a5138555a853f71109955f8f149.jpg"
+            >
+              <i class="fa-solid fa-truck text-3xl"></i>
+              <h1 class="text-xl">Автодоставка</h1>
+            </div>
+
+            <div
+              class="service-card h-fit flex items-center font-thin gap-5 py-3 md:py-7 pr-16 border-b border-gray-300 cursor-pointer"
+              data-title="Ответственное хранение и упаковка груза"
+              data-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptate sequi minima officiis, illo rerum quas. Nihil perferendis numquam in ipsum? Debitis dignissimos possimus praesentium quia facilis recusandae mollitia asperiores blanditiis iure quidem! Expedita, impedit, facilis reiciendis quasi repudiandae laboriosam tenetur dignissimos dolores reprehenderit porro provident beatae omnis? Non, repudiandae."
+              data-image="https://e-pepper.ru/upload/resize_cache/iblock/174/846_665_0/174a24744dff6b2bed7795cef6387291.jpg"
+            >
+              <i class="fa-solid fa-box text-3xl"></i>
+              <h1 class="text-xl">Ответственное хранение и упаковка груза</h1>
+            </div>
+          </div>
+
+          <!-- Second div with image -->
+          <div class="flex-grow relative w-full h-80 lg:h-auto lg:w-2/3 lg:overflow-hidden">
+            <!-- Add flex-grow and w-2/3 -->
+            <img
+              src="https://static.toiimg.com/thumb/msid-111512815,width-1280,height-720,imgsize-78030,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
+              alt=""
+              class="object-cover w-full h-full absolute inset-0"
+              id="service-image"
+            />
+            <div
+              class="bg-black bg-opacity-45 absolute text-white left-0 bottom-0 w-full h-full right-auto top-auto md:w-2/3 md:h-2/3 flex flex-col gap-7 p-7 font-thin"
+            >
+              <h1 class="text-3xl" id="service-title">Авиаперевозки</h1>
+              <p id="service-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Architecto quasi eos explicabo eius fuga sit omnis repellat
+                odio, non exercitationem.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="bg-gray-100 py-5">
+      <h1 class="text-xl lg:text-3xl font-thin px-20">Alibcargo - <br> агент крупнейших авиакомпаний</h1>
+
+      <div class="flex justify-between mt-10 p-10 px-20" style="background-image: url('https://static.toiimg.com/thumb/msid-111512815,width-1280,height-720,imgsize-78030,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg');background-repeat: no-repeat; object-fit: cover;background-size: cover;">
+        <div class="py-5 px-7 bg-white ">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Aeroflot_Soviet_Airlines_logo_%28ru%29.png" alt="" class="w-32 img-grayscale">
+        </div>
+
+        <div class="py-5 px-7 bg-white">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Aeroflot_Soviet_Airlines_logo_%28ru%29.png" alt="" class="w-32 img-grayscale">
+        </div>
+
+        <div class="py-5 px-7 bg-white">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Aeroflot_Soviet_Airlines_logo_%28ru%29.png" alt="" class="w-32 img-grayscale">
+        </div>
+
+        <div class="py-5 px-7 bg-white">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Aeroflot_Soviet_Airlines_logo_%28ru%29.png" alt="" class="w-32 img-grayscale">
+        </div>
+
+        <div class="py-5 px-7 bg-white">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Aeroflot_Soviet_Airlines_logo_%28ru%29.png" alt="" class="w-32 img-grayscale">
+        </div>
+
+        <div class="py-5 px-7 bg-white">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Aeroflot_Soviet_Airlines_logo_%28ru%29.png" alt="" class="w-32 img-grayscale">
+        </div>
+      </div>
       
-        <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover" style="pointer-events: none;" id="video">
-            <source src="./assets/video-bg.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-
-        <header class="relative z-50 text-white flex items-center justify-between p-10">
-            <div>
-                <i class="fa-solid fa-plane-departure text-2xl"></i>
-            </div>
-
-            <div>
-                <p class="hover:text-yellow-200 transition-all cursor-pointer">+7 (495) 123-45-67</p>
-            </div>
-        </header>
-
-        <div class="flex items-center h-full md:w-2/3 relative z-50 text-4xl md:text-7xl p-10 -my-24">
-            <h1 class="text-white font-thin leading-snug"><span class="text-yellow-300">Экспресс</span> - доставка грузов и отправлений по всему миру</h1>
-        </div>
-    </div>
-
-  <!-- О компании -->
-  <section class="relative py-20 bg-cover bg-center" style="background-image: url('/path-to-your-image.jpg');">
-    <img src="https://img.freepik.com/free-vector/air-cargo-isometric-flowchart-with-aircraft-logistic-transportation-symbols-vector-illustration_1284-83246.jpg?t=st=1727953965~exp=1727957565~hmac=d4b639ffb6fddbbe448d2a99225dcd0e188f100532dc8d0832cefad9eca79c7a&w=1480" alt="" class="w-full absolute inset-0 h-full object-cover">
-    <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Dark overlay -->
-    <div class="relative container mx-auto text-left text-white pl-5">
-      <h2 class="text-4xl font-bold text-yellow-200">О компании</h2>
-      <p class=" mt-4 text-left md:w-1/2 text-xl">
-        Наша компания успешно работает на рынке перевозок более <span class="font-semibold text-yellow-200">10 лет</span>, предоставляя высококачественные услуги логистики, авиаперевозок и экспресс-доставки по всему миру.
-      </p>
+    </section>
    
-    </div>
-  </section>
+    <section class="bg-gray-100 py-5">
+      <h1 class="text-xl lg:text-3xl font-thin px-20">Контакты</h1>
+    </section>
 
-  <!-- Услуги -->
-  <section class="bg-gray-100 py-20 px-5">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center">Наши услуги</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
-        <!-- Услуга 1 -->
-        <div class="bg-white p-6 rounded shadow">
-          <img src="https://img.freepik.com/free-vector/air-cargo-isometric-flowchart-with-aircraft-logistic-transportation-symbols-vector-illustration_1284-83246.jpg?t=st=1727953965~exp=1727957565~hmac=d4b639ffb6fddbbe448d2a99225dcd0e188f100532dc8d0832cefad9eca79c7a&w=1480" alt="" class="w-full h-52 object-cover mb-8" >
-          <h3 class="text-xl font-bold text-green-600">Авиаперевозки</h3>
-          <p class="mt-4 text-gray-700">Мы предлагаем безопасные и быстрые авиаперевозки по любым маршрутам.</p>
+    <footer class="bg-white text-gray-700 py-6 border-t">
+      <!-- Main footer content -->
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        <!-- Left Side: Logo and Description -->
+        <div class="flex items-center mb-6 md:mb-0">
+          <img src="utg-logo.png" alt="UTG Express Logo" class="w-16 h-auto mr-4">
+          <div class="text-sm">
+            <h3 class="font-semibold">UTG-Express</h3>
+            <p>доставка корреспонденции и грузов по всему миру</p>
+          </div>
         </div>
-        <!-- Услуга 2 -->
-        <div class="bg-white p-6 rounded shadow">
-            <img src="https://img.freepik.com/free-photo/logistics-transportation-container-cargo-ship-cargo-plane-with-working-crane-bridge-shipyard-sunrise-logistic-import-export-transport-industry-background-ai-generative_123827-24177.jpg?t=st=1727954369~exp=1727957969~hmac=3439ca00dfd6ec3c526d71faea32028ec51748eed2c116f17d88001d94117adc&w=2000" alt="" class="w-full h-52 object-cover mb-8" >
-            
-          <h3 class="text-xl font-bold text-green-600">Логистика</h3>
-          <p class="mt-4 text-gray-700">Наши логистические решения помогают оптимизировать все этапы доставки груза.</p>
-        </div>
-        <!-- Преимущества 1 -->
-        <div class="bg-white p-6 rounded shadow">
-            <img src="https://img.freepik.com/free-vector/flying-box-air-delivery-realistic-composition-with-conceptual-image-parcel-package-flying-with-aircraft-wings-vector-illustration_1284-78984.jpg?t=st=1727954577~exp=1727958177~hmac=a7dad6c56b58b8094d034dd9977452e2a20046657842848ea5d28267b3e24fb5&w=2000" alt="" class="w-full h-52 object-cover mb-8" >
-            
-          <h3 class="text-xl font-bold text-green-600">Скорость</h3>
-          <p class="mt-4 text-gray-700">Сроки доставки от 3 часов в зависимости от маршрута.</p>
-        </div>
-        <!-- Преимущества 2 -->
-        <div class="bg-white p-6 rounded shadow">
-            <img src="https://img.freepik.com/free-photo/friendship-teamwork_1098-3121.jpg?t=st=1727954747~exp=1727958347~hmac=aebb6a1f62a4fdc5574c49073b0f9f262908721b53a7e6a40e214d75e3e04af0&w=2000" alt="" class="w-full h-52 object-cover mb-8" >
-          <h3 class="text-xl font-bold text-green-600">Надежность</h3>
-          <p class="mt-4 text-gray-700">Гарантируем безопасность груза и выполнение сроков доставки.</p>
+    
+        <!-- Right Side: Contact Info -->
+        <div class="text-sm flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-8">
+          <div class="flex items-center">
+            <span class="mr-2 text-yellow-500">
+              <!-- Phone Icon (you can replace with SVG if needed) -->
+              📞
+            </span>
+            <a href="tel:+74959800709">+7 (495) 980-07-09</a>
+          </div>
+          <div class="flex items-center">
+            <span class="mr-2 text-yellow-500">✉️</span>
+            <a href="mailto:office@utg-express.ru">office@utg-express.ru</a>
+          </div>
+          <div class="flex items-center">
+            <span class="mr-2 text-yellow-500">📍</span>
+            <p>117593, г. Москва, Соловьиный проезд, 1, офис "UTG-Express"</p>
+          </div>
+          <div class="flex items-center">
+            <span class="mr-2 text-yellow-500">⏰</span>
+            <p>пн-пт с 9.00 до 18.00, сб-вс - выходной</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Отзывы клиентов -->
-  <section class="py-20 px-5">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold">Отзывы клиентов</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
-        <!-- Отзыв 1 -->
-        <div class="bg-yellow-200 p-6 rounded shadow">
-          <p class="text-gray-700">"Отличный сервис! Доставка была быстрой и без проблем."</p>
-          <p class="mt-4 font-semibold">— Иван Петров</p>
-        </div>
-        <!-- Отзыв 2 -->
-        <div class="bg-yellow-200 p-6 rounded shadow">
-          <p class="text-gray-700">"Пользуемся услугами уже несколько лет. Всегда всё на высшем уровне."</p>
-          <p class="mt-4 font-semibold">— Анна Смирнова</p>
-        </div>
-        <!-- Отзыв 3 -->
-        <div class="bg-yellow-200 p-6 rounded shadow">
-          <p class="text-gray-700">"Очень доволен скоростью доставки и качеством обслуживания."</p>
-          <p class="mt-4 font-semibold">— Сергей Иванов</p>
+    
+      <!-- Additional Links -->
+      <div class="container mx-auto text-center mt-6">
+        <div class="flex flex-col md:flex-row justify-between text-sm space-y-2 md:space-y-0 md:space-x-8">
+          <a href="#" class="hover:text-gray-900">ЭКСПРЕСС-ДОСТАВКА КОРРЕСПОНДЕНЦИИ</a>
+          <a href="#" class="hover:text-gray-900">АВИАПЕРЕВОЗКИ ГРУЗОВ</a>
+          <a href="#" class="hover:text-gray-900">АВТОПЕРЕВОЗКИ</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Контактные данные -->
-  <section class="bg-gray-100 py-20 px-5">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold">Контакты</h2>
-      <p class="text-lg mt-4">Свяжитесь с нами для получения подробной информации и консультации</p>
-      <div class="mt-10">
-        <p class="text-gray-700">Адрес: г. Москва, ул. Логистическая, д.10</p>
-        <p class="text-gray-700">Телефон: +7 (495) 123-45-67</p>
-        <p class="text-gray-700">Email: info@logistics.com</p>
+    
+      <!-- Copyright Information -->
+      <div class="container mx-auto text-center text-xs mt-6 text-gray-500">
+        © UTG-Express. Все права защищены, 2023
       </div>
-      <div class="mt-10 max-w-lg mx-auto">
-        <form class="space-y-4">
-          <input type="text" placeholder="Ваше имя" class="w-full px-4 py-3 border rounded">
-          <input type="email" placeholder="Ваш Email" class="w-full px-4 py-3 border rounded">
-          <textarea placeholder="Ваше сообщение" class="w-full px-4 py-3 border rounded h-32"></textarea>
-          <button class="w-full px-6 py-3 bg-yellow-200 text-black font-semibold rounded hover:bg-yellow-100">
-            Отправить заявку
-          </button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Галерея -->
-  <section class="py-20 px-5">
-    <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold">Галерея</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-        <img src="https://via.placeholder.com/300" alt="Груз 1" class="w-full h-64 object-cover rounded shadow">
-        <img src="https://via.placeholder.com/300" alt="Груз 2" class="w-full h-64 object-cover rounded shadow">
-        <img src="https://via.placeholder.com/300" alt="Процесс 3" class="w-full h-64 object-cover rounded shadow">
-      </div>
-    </div>
-  </section>
-
-  <!-- Подвал сайта -->
-  <footer class="bg-black text-white py-10">
-    <div class="container mx-auto text-center">
-      <div class="space-y-4">
-        <p>© 2024 Логистическая компания. Все права защищены.</p>
-        <div class="flex justify-center space-x-4">
-          <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
-          <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
-          <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-</body>
+    </footer>
+    
+    <script src="./src/app.js"></script>
+  </body>
 </html>
