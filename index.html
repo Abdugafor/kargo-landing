@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Лендинг Авиа и Логистики</title>
+    <title>Alibcargo</title>
+    <link rel="icon" href="https://alibcargo.com/wp-content/uploads/2023/01/Al-Ibtikar-Logistics-Logo-PNG-300x163.png" sizes="16x16 32x32 64x64" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./src/style.css">
     <link
@@ -40,7 +41,6 @@
 
         <div class="">
           <ul class="flex items-center gap-10">
-            <li><a href="#section-home">Главная</a></li>
             <li><a href="#section-about">О компании</a></li>
             <li><a href="#section-services">Услуги</a></li>
             <li><a href="#section-contacts">Контакты</a></li>
@@ -64,7 +64,59 @@
       </div>
     </div>
 
-  
+    <section class="py-5" id="section-about">
+      <div class="container mx-auto p-8">
+        <h1 class="text-3xl font-bold mb-4">Alibcargo - сегодня</h1>
+        <p class="text-lg mb-8">
+            ЗАО "Alibcargo" c <span class="font-bold">2007 года</span> предоставляет услуги по грузоперевозкам и срочным отправлениям.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="flex flex-col items-start">
+                <i class="fa-solid fa-plane text-4xl"></i>
+                <h3 class="text-xl font-semibold mb-2">Авиаперевозки грузов</h3>
+                <p class="text-base">Авиаперевозки с нами - это оптимальная стоимость доставки и бережное отношение к грузу.</p>
+            </div>
+
+            <!-- Service 2: Закупка и ремонт ATI -->
+            <div class="flex flex-col items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12 text-gray-900 mb-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7a4 4 0 114 4 4 4 0 01-4-4zM3 12v10h4v-6h6v6h4V12H3z"/>
+                </svg>
+                <h3 class="text-xl font-semibold mb-2">Закупка и ремонт ATI для авиакомпаний</h3>
+                <p class="text-base">Поставка изделий авиационной техники для воздушных судов, оказание услуг по техническому ремонту и обслуживанию.</p>
+            </div>
+
+            <!-- Service 3: Экспресс-доставка корреспонденции -->
+            <div class="flex flex-col items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12 text-gray-900 mb-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17h6m4-9h-2m0-2H7m6-2l-3-2-3 2"/>
+                </svg>
+                <h3 class="text-xl font-semibold mb-2">Экспресс-доставка корреспонденции</h3>
+                <p class="text-base">Уникальная технология позволяет отправить письмо за 2 часа до вылета рейса и получить в аэропорту через 2 часа после посадки.</p>
+            </div>
+
+            <!-- Service 4: Автомобильные перевозки грузов -->
+            <div class="flex flex-col items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12 text-gray-900 mb-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v8a2 2 0 002 2zm4-4H7m0-2h4m2 0h4M7 9h4m2 0h4M6 19l-2 1m14-1l2 1"/>
+                </svg>
+                <h3 class="text-xl font-semibold mb-2">Автомобильные перевозки грузов</h3>
+                <p class="text-base">Доставка грузов из аэропорта до адреса получателя (до двери).</p>
+            </div>
+
+            <!-- Service 5: Ответственное хранение и упаковка -->
+            <div class="flex flex-col items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-12 text-gray-900 mb-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2a9 9 0 0113 0l2 2M12 3v10"/>
+                </svg>
+                <h3 class="text-xl font-semibold mb-2">Ответственное хранение и упаковка</h3>
+                <p class="text-base">Полный комплекс услуг по хранению груза (упаковка, маркировка, комплектация), индивидуальные выгодные условия.</p>
+            </div>
+        </div>
+    </div>
+
+    </section>
 
     <!-- Услуги -->
     <section class="bg-gray-100 py-20 px-5" id="section-services">
@@ -185,34 +237,60 @@
       
     </section>
    
-    <section class="bg-gray-100 py-5">
+    <section class="bg-gray-100 py-5" id="section-contacts">
       <h1 class="text-xl lg:text-3xl font-thin px-20">Контакты</h1>
+
+      <div class="text-center">
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
+            
+            <div class="flex flex-col items-center">
+               <i class="fa-solid fa-phone text-yellow-300"></i>
+                <p class="text-gray-500 text-sm">Телефон</p>
+                <p class="text-lg font-thin">+7 (495) 980-07-09</p>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <i class="fa-solid fa-location-dot text-yellow-300"></i>
+                <p class="text-gray-500 text-sm">Адрес</p>
+                <p class="text-lg font-thin">117593, г. Москва, Соловьиный проезд, 1, офис "UTG-Express"</p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <i class="fa-regular fa-envelope text-yellow-300"></i>
+                <p class="text-gray-500 text-sm">Электронная почта</p>
+                <p class="text-lg font-thin"><a href="mailto:office@utg-express.ru" class="text-black hover:underline">office@utg-express.ru</a></p>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <i class="fa-regular fa-clock text-yellow-300"></i>
+                <p class="text-gray-500 text-sm">График работы</p>
+                <p class="text-lg font-thin">пн-пт с 9.00 до 18.00, сб-вс - выходной</p>
+            </div>
+
+        </div>
+    </div>
     </section>
 
     <footer class="bg-white text-gray-700 py-6 border-t">
-      <!-- Main footer content -->
       <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        <!-- Left Side: Logo and Description -->
         <div class="flex items-center mb-6 md:mb-0">
-          <img src="utg-logo.png" alt="UTG Express Logo" class="w-16 h-auto mr-4">
+          <img src="https://alibcargo.com/wp-content/uploads/2023/01/Al-Ibtikar-Logistics-Logo-PNG-300x163.png" alt="alibcargo" class="w-16 h-auto mr-4">
           <div class="text-sm">
-            <h3 class="font-semibold">UTG-Express</h3>
+            <h3 class="font-semibold">Alibcargo</h3>
             <p>доставка корреспонденции и грузов по всему миру</p>
           </div>
         </div>
     
-        <!-- Right Side: Contact Info -->
         <div class="text-sm flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-8">
           <div class="flex items-center">
             <span class="mr-2 text-yellow-500">
-              <!-- Phone Icon (you can replace with SVG if needed) -->
-              📞
             </span>
-            <a href="tel:+74959800709">+7 (495) 980-07-09</a>
+            <a href="tel:+74959800709">+7 (495) 123-45-67</a>
           </div>
           <div class="flex items-center">
             <span class="mr-2 text-yellow-500">✉️</span>
-            <a href="mailto:office@utg-express.ru">office@utg-express.ru</a>
+            <a href="">office@alibcargo.com</a>
           </div>
           <div class="flex items-center">
             <span class="mr-2 text-yellow-500">📍</span>
@@ -225,18 +303,8 @@
         </div>
       </div>
     
-      <!-- Additional Links -->
-      <div class="container mx-auto text-center mt-6">
-        <div class="flex flex-col md:flex-row justify-between text-sm space-y-2 md:space-y-0 md:space-x-8">
-          <a href="#" class="hover:text-gray-900">ЭКСПРЕСС-ДОСТАВКА КОРРЕСПОНДЕНЦИИ</a>
-          <a href="#" class="hover:text-gray-900">АВИАПЕРЕВОЗКИ ГРУЗОВ</a>
-          <a href="#" class="hover:text-gray-900">АВТОПЕРЕВОЗКИ</a>
-        </div>
-      </div>
-    
-      <!-- Copyright Information -->
       <div class="container mx-auto text-center text-xs mt-6 text-gray-500">
-        © UTG-Express. Все права защищены, 2023
+        © Alibcargo. Все права защищены, 2024
       </div>
     </footer>
     

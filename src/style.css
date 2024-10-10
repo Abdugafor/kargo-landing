@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .img-grayscale {
     filter: grayscale(100%) !important;
     transition: filter 0.3s ease !important;
