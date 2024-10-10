@@ -8,9 +8,9 @@ let activeCard = null;
 serviceCards.forEach((card) => {
     card.addEventListener('mouseover', () => {
         if (activeCard && activeCard !== card) {
-            activeCard.classList.remove('border-yellow-300');
+            activeCard.classList.remove('border-green-500');
         }
-        card.classList.add('border-yellow-300');
+        card.classList.add('border-green-500');
         activeCard = card;
 
         const imageUrl = card.getAttribute('data-image');
@@ -24,7 +24,7 @@ serviceCards.forEach((card) => {
 
     card.addEventListener('mouseleave', () => {
         if (activeCard === card) {
-            card.classList.remove('border-yellow-300');
+            card.classList.remove('border-green-500');
             activeCard = null;
         }
     });
